@@ -1,18 +1,18 @@
-# Web Development Project 5 - *Name of App Here*
+# Web Development Project 5 - Events Lite
 
-Submitted by: **Your Name Here**
+Submitted by: D'Andre Nicholson
 
-This web app: **insert description**
+This web app: Search for event tickets for a given venue
 
-Time spent: **X** hours spent in total
+Time spent: 10 hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **The list displays a list of data fetched using an API call**
-- [ ] **Data uses the useEffect React hook and async/await syntax**
-- [ ] **The app dashboard includes at least three summary statistics about the data such as**
+- [X] **The list displays a list of data fetched using an API call**
+- [X] **Data uses the useEffect React hook and async/await syntax**
+- [X] **The app dashboard includes at least three summary statistics about the data such as**
   - [ ] *insert details*
 - [ ] **A search bar allows the user to search for an item in the fetched data**
 - [ ] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
@@ -46,7 +46,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2024 D'Andre Nicholson
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
