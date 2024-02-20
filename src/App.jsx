@@ -31,16 +31,22 @@ function App() {
 
   return (
     <div>
-      <h1>Hello</h1>
+      <h1>Events Lite</h1>
       <div className='main-container'>
         <div>
           <Navigation/>
         </div>
         <div className='mini-container'>
           <div className='card-container'>
-            <CityCard/>
-            <VenueCard/>
-            <NextEventCard/>
+            <CityCard
+              list={list}
+            />
+            <VenueCard
+              list={list}
+            />
+            <NextEventCard
+              list={list}
+            />
           </div>
           <div>
             <Events

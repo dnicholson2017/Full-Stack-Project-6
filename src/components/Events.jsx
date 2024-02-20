@@ -24,7 +24,7 @@ const Events = (props) => {
                             </ul>
                         ))}
                 </div>
-                <div>
+                <div className="min-price">
                     <h3>Min Price</h3>
                     {props.list &&
                         props.list.events.map((event, index) => (

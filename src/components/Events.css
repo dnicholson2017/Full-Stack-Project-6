@@ -1,3 +1,8 @@
 .event-columns {
     display: flex;
+    justify-content: space-between;
+}
+
+.min-price {
+    padding-right: 10px;
 }

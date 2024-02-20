@@ -1,9 +1,9 @@
 import React from "react"
 
-const VenueCard = () => {
+const VenueCard = (props) => {
     return (
         <div>
-            Venue card
+            <h2>{props.list.events[0].venue.name}</h2>
         </div>
     )
 }
