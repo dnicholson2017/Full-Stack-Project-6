@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import CityCard from './components/card-1'
 import VenueCard from './components/card-2'
 import NextEventCard from './components/card-3'
@@ -8,7 +8,26 @@ import './App.css'
 
 function App() {
 
-  
+  const [list, setList] = useState(null);
+
+  useEffect(() => {
+    const findAllEvents = async () => {
+      try {
+        const response = await fetch("https://api.seatgeek.com/2/events?venue.id=6371&client_id=Mzk0NDI2OTZ8MTcwODQ0MzYyOC42NzMzNDA2");
+        const json = await response.json();
+        setList(json);
+        console.log(json);
+      }
+      catch (error) {
+        console.error("Error fetching data", error);
+        throw error;
+      }
+
+    }
+
+    findAllEvents().catch(console.error);  // ensure to call function outside of function definition
+
+  }, []);
 
   return (
     <div>
@@ -24,7 +43,9 @@ function App() {
             <NextEventCard/>
           </div>
           <div>
-            <Events/>
+            <Events
+              list={list}
+            />
           </div>
           
         </div>
