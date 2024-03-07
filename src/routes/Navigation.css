@@ -1,0 +1,10 @@
+.nav-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.test-container {
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+  }
