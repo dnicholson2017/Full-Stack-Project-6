@@ -35,27 +35,19 @@ function App() {
       <h1>Events Lite</h1>
       <div className='main-container'>
         <div className='mini-container'>
-          <div className='card-container'>
-            <CityCard
-              list={list}
-            />
-            <VenueCard
-              list={list}
-            />
-            <NextEventCard
-              list={list}
-            />
-          </div>
-          <div>
-            <Events
-              list={list}
-            />
-          </div>
-          
+          {list && ( // Conditionally render components when list is not null
+            <div className='card-container'>
+              <CityCard list={list} />
+              <VenueCard list={list} />
+              <NextEventCard list={list} />
+            </div>
+          )}
+          {list && <Events list={list} />} {/* Conditionally render Events component when list is not null */}
         </div>
       </div>
     </div>
-  )
+  );
+
 }
 
 export default App

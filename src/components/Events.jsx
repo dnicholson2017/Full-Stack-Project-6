@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Events.css";
+import { Link } from "react-router-dom";
 
 const Events = (props) => {
   const [filterResults, setFilterResults] = useState([]);
@@ -37,16 +38,18 @@ const Events = (props) => {
           {/* Render column headers */}
           <div>
             <h3>Date</h3>
-            {filterResults.length === 0 && props.list.events.map((event, index) => (
-              <ul key={index}>
-                <li>{event.datetime_local}</li>
-              </ul>
-            ))}
-            {filterResults.length > 0 && filterResults.map((eventId, index) => (
-              <ul key={index}>
-                <li>{props.list.events[eventId].datetime_local}</li>
-              </ul>
-            ))}
+              {filterResults.length === 0 && props.list.events.map((event, index) => (
+                <Link to={`/eventDetails/${event.id}`} key={event.id}>
+                  <ul key={index}>
+                    <li>{event.datetime_local}</li>
+                  </ul>
+                </Link>
+              ))}
+              {filterResults.length > 0 && filterResults.map((eventId, index) => (
+                <ul key={index}>
+                  <li>{props.list.events[eventId].datetime_local}</li>
+                </ul>
+              ))}
           </div>
           <div>
             <h3>Performer</h3>
