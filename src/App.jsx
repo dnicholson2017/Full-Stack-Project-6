@@ -3,6 +3,7 @@ import CityCard from './components/card-1'
 import VenueCard from './components/card-2'
 import NextEventCard from './components/card-3'
 import Events from './components/Events'
+import EventChart from './components/EventChart'
 import './App.css'
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
@@ -40,6 +41,7 @@ function App() {
               <CityCard list={list} />
               <VenueCard list={list} />
               <NextEventCard list={list} />
+              <EventChart list={list.events} />
             </div>
           )}
           {list && <Events list={list} />} {/* Conditionally render Events component when list is not null */}
