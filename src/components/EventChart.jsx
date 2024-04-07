@@ -19,7 +19,7 @@ const EventChart = (props) => {
       // Map event data to chart data
       const data = list.map(event => ({
         time: event.datetime_local,
-        price: event.stats.lowest_price
+        price: event.stats.average_price
       }));
       setChartData(data);
     }
@@ -29,7 +29,7 @@ const EventChart = (props) => {
 
   return (
     <div>
-      <h2>Event Price Data</h2>
+      <h2>Event Average Price Data</h2>
       <LineChart
         width={1300}
         height={400}
