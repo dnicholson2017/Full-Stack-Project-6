@@ -8,7 +8,6 @@ const Navigation = () => {
         
         <div className="nav-container">
             <nav>
-                Navigation component
                 <Link to="/">
                     Home
                 </Link>
