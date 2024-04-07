@@ -28,14 +28,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Full-Stack-Project-6](https://github.com/dnicholson2017/Full-Stack-Project-6/assets/143464047/29dc6c15-3b8d-42d2-9f32-fbf88e1203a6)
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
+
 
 ## Notes
 
